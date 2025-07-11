@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>GIFTS</title>
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="header__container">
+            <a href="#" class="user-avatar-wrapper">
+                <img class="user-avatar" src="/assets/images/kopatich.webp" alt="">
+            </a>
+            <div class="header-block">
+                <a href="#" class="fortune-wheel-btn">Колесо удачи</a>
+                <div class="user-balance">
+                    <div class="user-balance-value">3,298</div>
+                    <div class="header-ton-icon">
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.41434 0.581314H2.58517C1.32952 0.581314 0.533665 1.93578 1.16538 3.03074L5.38009 10.336C5.65513 10.813 6.34438 10.813 6.61942 10.336L10.835 3.03074C11.4658 1.93753 10.6691 0.581314 9.41434 0.581314ZM5.37667 8.14528L4.45877 6.36881L2.24399 2.40764C2.09788 2.1541 2.27834 1.82921 2.58431 1.82921H5.37581V8.14614L5.37667 8.14528ZM9.75381 2.40678L7.53988 6.36967L6.62199 8.14528V1.82835H9.41349C9.71945 1.82835 9.89992 2.15324 9.75381 2.40678Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main__container">
+            <div class="shop-filters">
+                <div class="shop-filter-item sort">
+                    <div class="shop-filter-closed sort">
+                        <div class="shop-filter-name">Сортировать:</div>
+                        <div class="shop-filter-selected">рейтинг</div>
+                    </div>
+                    <div class="shop-filter-sort-dropdown sort">
+                        <div class="shop-filter-sort-dropdown-item sort-filter-active">
+                            <div class="shop-filter-sort-dropdown-name">Рейтинг</div>
+                            <label class="sort-select-item">
+                                <input type="checkbox" class="checkbox-sort-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-sort-dropdown-name">Редкость</div>
+                            <label class="sort-select-item">
+                                <input type="checkbox" class="checkbox-sort-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-sort-dropdown-name">Стоимость </div>
+                            <label class="sort-select-item">
+                                <input type="checkbox" class="checkbox-sort-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-sort-dropdown-name">Модель</div>
+                            <label class="sort-select-item">
+                                <input type="checkbox" class="checkbox-sort-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-sort-dropdown-name">GIFT ID</div>
+                            <label class="sort-select-item">
+                                <input type="checkbox" class="checkbox-sort-select-item" name="agree" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-filter-item collection">
+                    <div class="shop-filter-closed collection">
+                        <div class="shop-filter-name">Коллекция:</div>
+                        <div class="shop-filter-selected">Berry Boxes</div>
+                    </div>
+                    <div class="shop-filter-sort-dropdown collection">
+                        <div class="shop-filter-sort-dropdown-item sort-filter-active">
+                            <div class="shop-filter-collection-theme">
+                                <div class="shop-filter-collection-dropdown-image">
+                                    <img src="/assets/images/collection-png.png" alt="">
+                                </div>
+                                <div class="shop-filter-sort-dropdown-name">Astral Shards</div>
+                            </div>
+                            <label class="collection-select-item">
+                                <input type="checkbox" class="checkbox-collection-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-collection-theme">
+                                <div class="shop-filter-collection-dropdown-image">
+                                    <img src="/assets/images/collection-png.png" alt="">
+                                </div>
+                                <div class="shop-filter-sort-dropdown-name">B-Day Candles</div>
+                            </div>
+                            <label class="collection-select-item">
+                                <input type="checkbox" class="checkbox-collection-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-collection-theme">
+                                <div class="shop-filter-collection-dropdown-image">
+                                    <img src="/assets/images/collection-png.png" alt="">
+                                </div>
+                                <div class="shop-filter-sort-dropdown-name">Berry Boxes</div>
+                            </div>
+                            <label class="collection-select-item">
+                                <input type="checkbox" class="checkbox-collection-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-collection-theme">
+                                <div class="shop-filter-collection-dropdown-image">
+                                    <img src="/assets/images/collection-png.png" alt="">
+                                </div>
+                                <div class="shop-filter-sort-dropdown-name">Big Years</div>
+                            </div>
+                            <label class="collection-select-item">
+                                <input type="checkbox" class="checkbox-collection-select-item" name="agree" />
+                            </label>
+                        </div>
+                        <div class="shop-filter-sort-dropdown-item">
+                            <div class="shop-filter-collection-theme">
+                                <div class="shop-filter-collection-dropdown-image">
+                                    <img src="/assets/images/collection-png.png" alt="">
+                                </div>
+                                <div class="shop-filter-sort-dropdown-name">Bonded Rings</div>
+                            </div>
+                            <label class="collection-select-item">
+                                <input type="checkbox" class="checkbox-collection-select-item" name="agree" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-search">
+                <input type="text" class="shop-search-input" placeholder="Поиск...">
+                <div class="shop-search-icon">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.9475 15.6375L13.4559 12.1459C14.2965 11.0268 14.7503 9.66465 14.7487 8.265C14.7487 4.68988 11.8401 1.78125 8.265 1.78125C4.68988 1.78125 1.78125 4.68988 1.78125 8.265C1.78125 11.8401 4.68988 14.7487 8.265 14.7487C9.66465 14.7503 11.0268 14.2965 12.1459 13.4559L15.6375 16.9475C15.8143 17.1055 16.0448 17.1898 16.2818 17.1832C16.5187 17.1765 16.7442 17.0794 16.9118 16.9118C17.0794 16.7442 17.1765 16.5187 17.1832 16.2818C17.1898 16.0448 17.1055 15.8143 16.9475 15.6375ZM3.63375 8.265C3.63375 7.34903 3.90537 6.45362 4.41426 5.69202C4.92314 4.93041 5.64645 4.33681 6.4927 3.98628C7.33895 3.63575 8.27014 3.54404 9.16851 3.72274C10.0669 3.90144 10.8921 4.34252 11.5398 4.99021C12.1875 5.6379 12.6286 6.46311 12.8073 7.36149C12.986 8.25986 12.8942 9.19105 12.5437 10.0373C12.1932 10.8836 11.5996 11.6069 10.838 12.1157C10.0764 12.6246 9.18097 12.8962 8.265 12.8962C7.03717 12.8948 5.86005 12.4064 4.99184 11.5382C4.12363 10.67 3.63522 9.49283 3.63375 8.265Z"
+                            fill="#8B8B8B" />
+                    </svg>
+                </div>
+            </div>
+            <div class="shop-inner">
+                <div class="shop-cards-block">
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop-cards-block">
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop-cards-block">
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="shop-cards-block">
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="shop-card">
+                        <div class="shop-card-image">
+                            <img src="/assets/images/card-image.png" alt="">
+                        </div>
+                        <div class="shop-card-desc">
+                            <div class="shop-card-price">
+                                <div class="shop-card-price-text">111.93</div>
+                                <div class="shop-card-price-icon">
+                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.4705 0H1.64132C0.385675 0 -0.410183 1.35446 0.221532 2.44943L4.43625 9.75471C4.71128 10.2317 5.40053 10.2317 5.67557 9.75471L9.89114 2.44943C10.522 1.35621 9.72614 0 8.47135 0H8.4705ZM4.43282 7.56396L3.51492 5.7875L1.30014 1.82632C1.15403 1.57279 1.3345 1.24789 1.64046 1.24789H4.43196V7.56482L4.43282 7.56396ZM8.80996 1.82546L6.59603 5.78836L5.67814 7.56396V1.24704H8.46964C8.7756 1.24704 8.95607 1.57193 8.80996 1.82546Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
