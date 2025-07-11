@@ -1,4 +1,7 @@
 $(document).ready(function() {
-    const tg = Telegram.WebApp;
-    tg.expand();
+    if (Telegram.WebApp && Telegram.WebApp.expand) {
+    Telegram.WebApp.expand();
+} else {
+    console.error("Telegram.WebApp.expand() is not available");
+}
 });
