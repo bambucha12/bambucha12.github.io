@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    if (Telegram.WebApp && Telegram.WebApp.expand) {
-    Telegram.WebApp.expand();
+    if (window.Telegram && Telegram.WebApp) {
+    console.log("Running inside Telegram WebApp");
 } else {
-    console.error("Telegram.WebApp.expand() is not available");
+    console.log("Not in Telegram WebApp (running in browser?)");
 }
 });
