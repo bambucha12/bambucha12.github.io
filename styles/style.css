@@ -101,7 +101,7 @@ a {
 .main-content {
     position: relative;
     margin: 11px 11px 18px 11px;
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 
 .main-content::before {
@@ -112,11 +112,11 @@ a {
     right: 0;
     bottom: 0;
     background-image: url(/assets/images/Ellipse-bg.jpg);
-    filter: blur(65px);
+    filter: blur(5px);
     z-index: -1;
     width: 70px;
     height: 70px;
-    overflow: hidden;
+/*     overflow: hidden; */
     border-radius: 50%;
 }
 
